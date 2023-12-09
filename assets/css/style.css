@@ -1,0 +1,66 @@
+
+.album {
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  padding-left: 7rem;
+}
+.jumbotron {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron h1 {
+    font-family: "open sans";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .jumbotron p {
+    font-size: 15px;
+  }
+  .jumbotron .container {
+    max-width: 50rem;
+  }
+
+.top {
+  font-family: open sans;
+  font-size: 12px;
+  margin-top: -700px;
+  float: right ;
+  margin-right: 25%;
+}
+.top h6 {
+  font-family: open sans;
+  font-style: italic;
+ 
+}
+
+  .bd-placeholder-img {
+    font-family: "open sans";
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  
