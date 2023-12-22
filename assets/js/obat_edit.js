@@ -20,7 +20,7 @@ $(document).ready(function () {
     // menampilkan data by=id
     $.ajax({
         type: "GET",
-        url: host + "read_one_obat.php?kode=" + kode,
+        url: "http://program.test/agustiana/read_one_obat.php?kode=" + kode,
         async: true,
         cache: false,
         contentType: false,
@@ -31,7 +31,11 @@ $(document).ready(function () {
 
             $("#kode").val(data.kode);
             $("#nama").val(data.nama);
-            $("#kode_kategori").val(data.kode_kategori);
+            $("#kode_supplier option[value=" + data.kode_supplier + "]").attr("selected", "selected");
+            $("#kode_kategori option[value=" + data.kode_kategori + "]").attr("selected", "selected");
+            $("#stok").val(data.stok);
+            $("#harga").val(data.harga);
+            $("#desc").val(data.desc);
         },
     });
 
@@ -41,7 +45,7 @@ $(document).ready(function () {
         var formData = new FormData(this);
         $.ajax({
             type: "POST",
-            url: host + "update_obat.php",
+            url: "http://program.test/agustiana/update_obat.php",
             data: formData,
             async: true,
             cache: false,
@@ -49,7 +53,7 @@ $(document).ready(function () {
             processData: false,
             dataType: "json",
             success: function (response) {
-                alert(response.msg);
+                console.log(response);
             },
         });
     });
