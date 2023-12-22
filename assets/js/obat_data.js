@@ -17,6 +17,11 @@ $(document).ready(function () {
                         <td>` +
                         (i + 1) +
                         `</td>
+                        <td>
+                        <img src="../assets/img/` +
+                        dataObat[i].gambar +
+                        `" width="100" />
+                        </td>
                         <td>` +
                         dataObat[i].kode +
                         `</td>
@@ -24,13 +29,20 @@ $(document).ready(function () {
                         dataObat[i].obat +
                         `</td>
                         <td>` +
+                        dataObat[i].supplier +
+                        `</td>
+                        <td>` +
                         dataObat[i].kategori +
                         `</td>
-                        <td>
-                        <img src="../assets/img/` +
-                        dataObat[i].gambar +
-                        `" width="100" />
-                        </td>
+                        <td>` +
+                        dataObat[i].stok +
+                        `</td>
+                        <td>` +
+                        dataObat[i].desc +
+                        `</td>
+                        <td>` +
+                        dataObat[i].harga +
+                        `</td>
                         <td>
                         <button id="hapus" class="btn btn-danger" value="` +
                         dataObat[i].kode +
