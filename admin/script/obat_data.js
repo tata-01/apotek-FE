@@ -44,9 +44,6 @@ $(document).ready(function () {
                         <td>` +
                             dataObat[i].harga +
                             `</td>
-                        <td>` +
-                            dataObat[i].desk +
-                            `</td>
                         <td>
                         <button id="hapus" class="btn btn-danger" value="` +
                             dataObat[i].kode +

@@ -14,12 +14,12 @@
                 <input type="text" class="form-control" name="nama" id="nama" />
             </div>
             <div class="form-group">
-                <label for="gambar">Kode supplier</label>
+                <label for="gambar">supplier</label>
                 <select class="form-control" id="kode_supplier" name="kode_supplier">
                 </select>
             </div>
             <div class="form-group">
-                <label for="gambar">Kode Kategori</label>
+                <label for="gambar">Kategori</label>
                 <select class="form-control" id="kode_kategori" name="kode_kategori">
                 </select>
             </div>
@@ -34,10 +34,6 @@
             <div class="form-group">
                 <label for="harga">Harga</label>
                 <input type="number" class="form-control" name="harga" id="harga" />
-            </div>
-            <div class="form-group">
-                <label for="desc">Deskripsi</label>
-                <input type="text" class="form-control" name="desc" id="desc" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary btn-lg" type="submit">Submit</button>

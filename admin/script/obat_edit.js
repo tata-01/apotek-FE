@@ -18,7 +18,7 @@ $(document).ready(function () {
     // menampilkan select supplier
     $.ajax({
         type: "GET",
-        url: host + "read_supplier.php",
+        url: host + "supplier_read.php",
         async: true,
         cache: false,
         contentType: false,
@@ -36,7 +36,7 @@ $(document).ready(function () {
     // menampilkan select kategori
     $.ajax({
         type: "GET",
-        url: host + "read_kategori.php",
+        url: host + "kategori_read.php",
         async: true,
         cache: false,
         contentType: false,
@@ -55,7 +55,7 @@ $(document).ready(function () {
     var kode = getUrlParameter("kode");
     $.ajax({
         type: "GET",
-        url: host + "read_one_obat.php?kode=" + kode,
+        url: host + "obat_read_one.php?kode=" + kode,
         async: true,
         cache: false,
         contentType: false,
@@ -68,18 +68,18 @@ $(document).ready(function () {
             $("#nama").val(data.nama);
             $("#kode_kategori").val(data.kode_kategori);
             $("#kode_supplier").val(data.kode_supplier);
+            $("#stock").val(data.stock);
             $("#harga").val(data.harga);
-            $("#desc").val(data.deskripsi);
         },
     });
 
     // update data
-    $("#formObat").submit(function (e) {
+    $("#obatUpdate").submit(function (e) {
         e.preventDefault();
         var formData = new FormData(this);
         $.ajax({
             type: "POST",
-            url: host + "update_obat.php",
+            url: host + "obat_update.php",
             data: formData,
             cache: false,
             contentType: false,
@@ -87,7 +87,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 alert(response.msg);
-                location.href = host_fe + "admin/?page=obat_data";
+                location.href = host_fe + "/?page=obat_data";
             },
         });
     });
