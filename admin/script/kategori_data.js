@@ -43,7 +43,7 @@ $(document).ready(function () {
         async: true,
         success: function (response) {
           alert(response.msg);
-          readKategori();
+          location.href = host_fe + "/admin/?page=kategori_data";
           
         },
       });

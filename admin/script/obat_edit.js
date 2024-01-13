@@ -87,7 +87,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 alert(response.msg);
-                location.href = host_fe + "/?page=obat_data";
+                location.href = host_fe + "/admin/?page=obat_data";
             },
         });
     });
