@@ -65,7 +65,7 @@ $('#obatInput').submit(function(e){
         dataType: 'json',
         success: (result) => {
             alert(result.msg);
-            location.href = host_fe + "/admin/?page=obat_data";
+            location.href = host_fe + "admin/?page=obat_data";
         },
     });
   })

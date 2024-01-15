@@ -1,6 +1,4 @@
 $("#kategoriInput").submit(function (e) {
-  var host_fe = "http://localhost/revisi_fe/admin"; 
-  var host = "http://localhost/revisi_be/";
   e.preventDefault();
     var formData = new FormData(this);
     $.ajax({
@@ -13,7 +11,7 @@ $("#kategoriInput").submit(function (e) {
       dataType: "json", 
       success: (result) => {
         alert(result.msg);
-        location.href = host_fe + "/admin/?page=kategori_data";
+        location.href = host_fe + "admin/?page=kategori_data";
       },
     });
   });

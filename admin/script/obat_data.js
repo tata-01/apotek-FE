@@ -76,7 +76,7 @@ $(document).ready(function () {
                 async: true,
                 success: function (response) {
                     alert(response.msg);
-                    location.href = host_fe + "/admin/?page=obat_data";
+                    location.href = host_fe + "admin/?page=obat_data";
                 },
             });
         }

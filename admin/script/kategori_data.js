@@ -43,7 +43,7 @@ $(document).ready(function () {
         async: true,
         success: function (response) {
           alert(response.msg);
-          location.href = host_fe + "/admin/?page=kategori_data";
+          location.href = host_fe + "admin/?page=kategori_data";
           
         },
       });

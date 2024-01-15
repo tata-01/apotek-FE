@@ -11,7 +11,7 @@ $("#supplierInput").submit(function (e) {
       dataType: "json",
       success: (result) => {
         alert(result.msg);
-        location.href = host_fe + "/admin/?page=supplier_data";
+        location.href = host_fe + "admin/?page=supplier_data";
       },
     });
   });

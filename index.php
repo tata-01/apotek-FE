@@ -26,11 +26,14 @@ if(!isset($_REQUEST['page'])){
       <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
         <a href="?page=home" class="navbar-brand d-flex align-items-center">
           <i class="bi bi-shop"></i>
-          <strong style="font-family: open sans;"> &nbsp; &nbsp; &nbsp; Home</strong>
+          <strong style="font-family: open sans;"> &nbsp; &nbsp; &nbsp; Home</strong></a>
+        <a href="admin/index.php" class="navbar-brand d-flex align-items-center">
+          <strong style="font-family: open sans;"> &nbsp; &nbsp; &nbsp; login</strong></a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
+    
           </a>
         </div>
       </div>
